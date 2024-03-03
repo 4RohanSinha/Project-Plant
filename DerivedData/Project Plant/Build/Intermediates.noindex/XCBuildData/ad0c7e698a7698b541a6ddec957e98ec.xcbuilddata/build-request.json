@@ -1,0 +1,65 @@
+{
+  "buildCommand" : {
+    "command" : "build",
+    "skipDependencies" : false,
+    "style" : "buildAndRun"
+  },
+  "configuredTargets" : [
+    {
+      "guid" : "deb9b25e146b90e3378796f2be3bf1dc0e859b938e3fb45d9a63ca9107c2d952"
+    }
+  ],
+  "containerPath" : "/Users/lindsayqin/Desktop/Workspace/Project-Plant/Project Plant.xcodeproj",
+  "continueBuildingAfterErrors" : false,
+  "enableIndexBuildArena" : false,
+  "hideShellScriptEnvironment" : false,
+  "parameters" : {
+    "action" : "build",
+    "activeArchitecture" : "arm64",
+    "activeRunDestination" : {
+      "disableOnlyActiveArch" : false,
+      "platform" : "iphonesimulator",
+      "sdk" : "iphonesimulator17.0",
+      "sdkVariant" : "iphonesimulator",
+      "supportedArchitectures" : [
+        "arm64",
+        "x86_64"
+      ],
+      "targetArchitecture" : "arm64"
+    },
+    "arenaInfo" : {
+      "buildIntermediatesPath" : "/Users/lindsayqin/Desktop/Workspace/Project-Plant/DerivedData/Project Plant/Build/Intermediates.noindex",
+      "buildProductsPath" : "/Users/lindsayqin/Desktop/Workspace/Project-Plant/DerivedData/Project Plant/Build/Products",
+      "derivedDataPath" : "/Users/lindsayqin/Desktop/Workspace/Project-Plant/DerivedData",
+      "indexDataStoreFolderPath" : "/Users/lindsayqin/Desktop/Workspace/Project-Plant/DerivedData/Project Plant/Index.noindex/DataStore",
+      "indexEnableDataStore" : true,
+      "indexPCHPath" : "/Users/lindsayqin/Desktop/Workspace/Project-Plant/DerivedData/Project Plant/Index.noindex/PrecompiledHeaders",
+      "pchPath" : "/Users/lindsayqin/Desktop/Workspace/Project-Plant/DerivedData/Project Plant/Build/Intermediates.noindex/PrecompiledHeaders"
+    },
+    "configurationName" : "Debug",
+    "overrides" : {
+      "synthesized" : {
+        "table" : {
+          "ASSETCATALOG_FILTER_FOR_DEVICE_MODEL" : "iPhone16,1",
+          "ASSETCATALOG_FILTER_FOR_DEVICE_OS_VERSION" : "17.0",
+          "ASSETCATALOG_FILTER_FOR_THINNING_DEVICE_CONFIGURATION" : "iPhone16,1",
+          "BUILD_ACTIVE_RESOURCES_ONLY" : "YES",
+          "CLANG_COVERAGE_MAPPING" : "YES",
+          "CLANG_PROFILE_DATA_DIRECTORY" : "/Users/lindsayqin/Desktop/Workspace/Project-Plant/DerivedData/Project Plant/Build/ProfileData",
+          "ENABLE_PREVIEWS" : "NO",
+          "ENABLE_XOJIT_PREVIEWS" : "NO",
+          "TARGET_DEVICE_IDENTIFIER" : "976ABCFB-55EC-4F85-910F-77018D80B693",
+          "TARGET_DEVICE_MODEL" : "iPhone16,1",
+          "TARGET_DEVICE_OS_VERSION" : "17.0",
+          "TARGET_DEVICE_PLATFORM_NAME" : "iphonesimulator"
+        }
+      }
+    }
+  },
+  "schemeCommand" : "launch",
+  "showNonLoggedProgress" : true,
+  "useDryRun" : false,
+  "useImplicitDependencies" : true,
+  "useLegacyBuildLocations" : false,
+  "useParallelTargets" : true
+}

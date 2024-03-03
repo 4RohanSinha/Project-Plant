@@ -1,0 +1,431 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
+<plist version="1.0">
+<dict>
+	<key>logFormatVersion</key>
+	<integer>10</integer>
+	<key>logs</key>
+	<dict>
+		<key>27401B60-9525-43B4-927C-9988AFF20D2B</key>
+		<dict>
+			<key>className</key>
+			<string>IDEActivityLogSection</string>
+			<key>documentTypeString</key>
+			<string>&lt;nil&gt;</string>
+			<key>domainType</key>
+			<string>Xcode.IDEActivityLogDomainType.BuildLog</string>
+			<key>fileName</key>
+			<string>27401B60-9525-43B4-927C-9988AFF20D2B.xcactivitylog</string>
+			<key>hasPrimaryLog</key>
+			<true/>
+			<key>primaryObservable</key>
+			<dict>
+				<key>highLevelStatus</key>
+				<string>W</string>
+				<key>totalNumberOfAnalyzerIssues</key>
+				<integer>0</integer>
+				<key>totalNumberOfErrors</key>
+				<integer>0</integer>
+				<key>totalNumberOfTestFailures</key>
+				<integer>0</integer>
+				<key>totalNumberOfWarnings</key>
+				<integer>1</integer>
+			</dict>
+			<key>schemeIdentifier-containerName</key>
+			<string>Project Plant project</string>
+			<key>schemeIdentifier-schemeName</key>
+			<string>Project Plant</string>
+			<key>schemeIdentifier-sharedScheme</key>
+			<integer>1</integer>
+			<key>signature</key>
+			<string>Build Project Plant</string>
+			<key>timeStartedRecording</key>
+			<real>731185937.42224598</real>
+			<key>timeStoppedRecording</key>
+			<real>731185943.01638103</real>
+			<key>title</key>
+			<string>Build Project Plant</string>
+			<key>uniqueIdentifier</key>
+			<string>27401B60-9525-43B4-927C-9988AFF20D2B</string>
+		</dict>
+		<key>3285E687-1CE6-459F-ADA4-D04F1AB85736</key>
+		<dict>
+			<key>className</key>
+			<string>IDEActivityLogSection</string>
+			<key>documentTypeString</key>
+			<string>&lt;nil&gt;</string>
+			<key>domainType</key>
+			<string>Xcode.IDEActivityLogDomainType.BuildLog</string>
+			<key>fileName</key>
+			<string>3285E687-1CE6-459F-ADA4-D04F1AB85736.xcactivitylog</string>
+			<key>hasPrimaryLog</key>
+			<true/>
+			<key>primaryObservable</key>
+			<dict>
+				<key>highLevelStatus</key>
+				<string>W</string>
+				<key>totalNumberOfAnalyzerIssues</key>
+				<integer>0</integer>
+				<key>totalNumberOfErrors</key>
+				<integer>0</integer>
+				<key>totalNumberOfTestFailures</key>
+				<integer>0</integer>
+				<key>totalNumberOfWarnings</key>
+				<integer>1</integer>
+			</dict>
+			<key>schemeIdentifier-containerName</key>
+			<string>Project Plant project</string>
+			<key>schemeIdentifier-schemeName</key>
+			<string>Project Plant</string>
+			<key>schemeIdentifier-sharedScheme</key>
+			<integer>1</integer>
+			<key>signature</key>
+			<string>Build Project Plant</string>
+			<key>timeStartedRecording</key>
+			<real>731186320.059093</real>
+			<key>timeStoppedRecording</key>
+			<real>731186320.68940902</real>
+			<key>title</key>
+			<string>Build Project Plant</string>
+			<key>uniqueIdentifier</key>
+			<string>3285E687-1CE6-459F-ADA4-D04F1AB85736</string>
+		</dict>
+		<key>5C58B774-F671-42EF-80C8-16B7FB99EBCC</key>
+		<dict>
+			<key>className</key>
+			<string>IDEActivityLogSection</string>
+			<key>documentTypeString</key>
+			<string>&lt;nil&gt;</string>
+			<key>domainType</key>
+			<string>Xcode.IDEActivityLogDomainType.BuildLog</string>
+			<key>fileName</key>
+			<string>5C58B774-F671-42EF-80C8-16B7FB99EBCC.xcactivitylog</string>
+			<key>hasPrimaryLog</key>
+			<true/>
+			<key>primaryObservable</key>
+			<dict>
+				<key>highLevelStatus</key>
+				<string>W</string>
+				<key>totalNumberOfAnalyzerIssues</key>
+				<integer>0</integer>
+				<key>totalNumberOfErrors</key>
+				<integer>0</integer>
+				<key>totalNumberOfTestFailures</key>
+				<integer>0</integer>
+				<key>totalNumberOfWarnings</key>
+				<integer>1</integer>
+			</dict>
+			<key>schemeIdentifier-containerName</key>
+			<string>Project Plant project</string>
+			<key>schemeIdentifier-schemeName</key>
+			<string>Project Plant</string>
+			<key>schemeIdentifier-sharedScheme</key>
+			<integer>1</integer>
+			<key>signature</key>
+			<string>Build Project Plant</string>
+			<key>timeStartedRecording</key>
+			<real>731186501.24266601</real>
+			<key>timeStoppedRecording</key>
+			<real>731186501.74371004</real>
+			<key>title</key>
+			<string>Build Project Plant</string>
+			<key>uniqueIdentifier</key>
+			<string>5C58B774-F671-42EF-80C8-16B7FB99EBCC</string>
+		</dict>
+		<key>760A7B80-B865-43EF-AF4D-3D4CEF748A08</key>
+		<dict>
+			<key>className</key>
+			<string>IDEActivityLogSection</string>
+			<key>documentTypeString</key>
+			<string>&lt;nil&gt;</string>
+			<key>domainType</key>
+			<string>Xcode.IDEActivityLogDomainType.BuildLog</string>
+			<key>fileName</key>
+			<string>760A7B80-B865-43EF-AF4D-3D4CEF748A08.xcactivitylog</string>
+			<key>hasPrimaryLog</key>
+			<true/>
+			<key>primaryObservable</key>
+			<dict>
+				<key>highLevelStatus</key>
+				<string>S</string>
+				<key>totalNumberOfAnalyzerIssues</key>
+				<integer>0</integer>
+				<key>totalNumberOfErrors</key>
+				<integer>0</integer>
+				<key>totalNumberOfTestFailures</key>
+				<integer>0</integer>
+				<key>totalNumberOfWarnings</key>
+				<integer>0</integer>
+			</dict>
+			<key>schemeIdentifier-containerName</key>
+			<string>Project Plant project</string>
+			<key>schemeIdentifier-schemeName</key>
+			<string>Project Plant</string>
+			<key>schemeIdentifier-sharedScheme</key>
+			<integer>1</integer>
+			<key>signature</key>
+			<string>Build Project Plant</string>
+			<key>timeStartedRecording</key>
+			<real>731188863.21598601</real>
+			<key>timeStoppedRecording</key>
+			<real>731188864.38922095</real>
+			<key>title</key>
+			<string>Build Project Plant</string>
+			<key>uniqueIdentifier</key>
+			<string>760A7B80-B865-43EF-AF4D-3D4CEF748A08</string>
+		</dict>
+		<key>8888FCA2-22D4-454E-AB33-077FDE76F6F4</key>
+		<dict>
+			<key>className</key>
+			<string>IDEActivityLogSection</string>
+			<key>documentTypeString</key>
+			<string>&lt;nil&gt;</string>
+			<key>domainType</key>
+			<string>Xcode.IDEActivityLogDomainType.BuildLog</string>
+			<key>fileName</key>
+			<string>8888FCA2-22D4-454E-AB33-077FDE76F6F4.xcactivitylog</string>
+			<key>hasPrimaryLog</key>
+			<true/>
+			<key>primaryObservable</key>
+			<dict>
+				<key>highLevelStatus</key>
+				<string>W</string>
+				<key>totalNumberOfAnalyzerIssues</key>
+				<integer>0</integer>
+				<key>totalNumberOfErrors</key>
+				<integer>0</integer>
+				<key>totalNumberOfTestFailures</key>
+				<integer>0</integer>
+				<key>totalNumberOfWarnings</key>
+				<integer>1</integer>
+			</dict>
+			<key>schemeIdentifier-containerName</key>
+			<string>Project Plant project</string>
+			<key>schemeIdentifier-schemeName</key>
+			<string>Project Plant</string>
+			<key>schemeIdentifier-sharedScheme</key>
+			<integer>1</integer>
+			<key>signature</key>
+			<string>Build Project Plant</string>
+			<key>timeStartedRecording</key>
+			<real>731187036.21849704</real>
+			<key>timeStoppedRecording</key>
+			<real>731187039.52813995</real>
+			<key>title</key>
+			<string>Build Project Plant</string>
+			<key>uniqueIdentifier</key>
+			<string>8888FCA2-22D4-454E-AB33-077FDE76F6F4</string>
+		</dict>
+		<key>A551BFAA-9826-4C0B-B5BA-02A0CC7AD686</key>
+		<dict>
+			<key>className</key>
+			<string>IDEActivityLogSection</string>
+			<key>documentTypeString</key>
+			<string>&lt;nil&gt;</string>
+			<key>domainType</key>
+			<string>Xcode.IDEActivityLogDomainType.BuildLog</string>
+			<key>fileName</key>
+			<string>A551BFAA-9826-4C0B-B5BA-02A0CC7AD686.xcactivitylog</string>
+			<key>hasPrimaryLog</key>
+			<true/>
+			<key>primaryObservable</key>
+			<dict>
+				<key>highLevelStatus</key>
+				<string>W</string>
+				<key>totalNumberOfAnalyzerIssues</key>
+				<integer>0</integer>
+				<key>totalNumberOfErrors</key>
+				<integer>0</integer>
+				<key>totalNumberOfTestFailures</key>
+				<integer>0</integer>
+				<key>totalNumberOfWarnings</key>
+				<integer>1</integer>
+			</dict>
+			<key>schemeIdentifier-containerName</key>
+			<string>Project Plant project</string>
+			<key>schemeIdentifier-schemeName</key>
+			<string>Project Plant</string>
+			<key>schemeIdentifier-sharedScheme</key>
+			<integer>1</integer>
+			<key>signature</key>
+			<string>Build Project Plant</string>
+			<key>timeStartedRecording</key>
+			<real>731186224.77148604</real>
+			<key>timeStoppedRecording</key>
+			<real>731186227.68200195</real>
+			<key>title</key>
+			<string>Build Project Plant</string>
+			<key>uniqueIdentifier</key>
+			<string>A551BFAA-9826-4C0B-B5BA-02A0CC7AD686</string>
+		</dict>
+		<key>B5AD1633-1DA0-40A0-A7A6-530671B8C908</key>
+		<dict>
+			<key>className</key>
+			<string>IDEActivityLogSection</string>
+			<key>documentTypeString</key>
+			<string>&lt;nil&gt;</string>
+			<key>domainType</key>
+			<string>Xcode.IDEActivityLogDomainType.BuildLog</string>
+			<key>fileName</key>
+			<string>B5AD1633-1DA0-40A0-A7A6-530671B8C908.xcactivitylog</string>
+			<key>hasPrimaryLog</key>
+			<true/>
+			<key>primaryObservable</key>
+			<dict>
+				<key>highLevelStatus</key>
+				<string>W</string>
+				<key>totalNumberOfAnalyzerIssues</key>
+				<integer>0</integer>
+				<key>totalNumberOfErrors</key>
+				<integer>0</integer>
+				<key>totalNumberOfTestFailures</key>
+				<integer>0</integer>
+				<key>totalNumberOfWarnings</key>
+				<integer>1</integer>
+			</dict>
+			<key>schemeIdentifier-containerName</key>
+			<string>Project Plant project</string>
+			<key>schemeIdentifier-schemeName</key>
+			<string>Project Plant</string>
+			<key>schemeIdentifier-sharedScheme</key>
+			<integer>1</integer>
+			<key>signature</key>
+			<string>Build Project Plant</string>
+			<key>timeStartedRecording</key>
+			<real>731186094.06419802</real>
+			<key>timeStoppedRecording</key>
+			<real>731186094.35376704</real>
+			<key>title</key>
+			<string>Build Project Plant</string>
+			<key>uniqueIdentifier</key>
+			<string>B5AD1633-1DA0-40A0-A7A6-530671B8C908</string>
+		</dict>
+		<key>B9B8092D-6794-4A64-997F-181DFA97108C</key>
+		<dict>
+			<key>className</key>
+			<string>IDEActivityLogSection</string>
+			<key>documentTypeString</key>
+			<string>&lt;nil&gt;</string>
+			<key>domainType</key>
+			<string>Xcode.IDEActivityLogDomainType.BuildLog</string>
+			<key>fileName</key>
+			<string>B9B8092D-6794-4A64-997F-181DFA97108C.xcactivitylog</string>
+			<key>hasPrimaryLog</key>
+			<true/>
+			<key>primaryObservable</key>
+			<dict>
+				<key>highLevelStatus</key>
+				<string>W</string>
+				<key>totalNumberOfAnalyzerIssues</key>
+				<integer>0</integer>
+				<key>totalNumberOfErrors</key>
+				<integer>0</integer>
+				<key>totalNumberOfTestFailures</key>
+				<integer>0</integer>
+				<key>totalNumberOfWarnings</key>
+				<integer>1</integer>
+			</dict>
+			<key>schemeIdentifier-containerName</key>
+			<string>Project Plant project</string>
+			<key>schemeIdentifier-schemeName</key>
+			<string>Project Plant</string>
+			<key>schemeIdentifier-sharedScheme</key>
+			<integer>1</integer>
+			<key>signature</key>
+			<string>Build Project Plant</string>
+			<key>timeStartedRecording</key>
+			<real>731186441.21696198</real>
+			<key>timeStoppedRecording</key>
+			<real>731186444.28609896</real>
+			<key>title</key>
+			<string>Build Project Plant</string>
+			<key>uniqueIdentifier</key>
+			<string>B9B8092D-6794-4A64-997F-181DFA97108C</string>
+		</dict>
+		<key>F3010311-1D2B-4746-818A-A9C444498FED</key>
+		<dict>
+			<key>className</key>
+			<string>IDEActivityLogSection</string>
+			<key>documentTypeString</key>
+			<string>&lt;nil&gt;</string>
+			<key>domainType</key>
+			<string>Xcode.IDEActivityLogDomainType.BuildLog</string>
+			<key>fileName</key>
+			<string>F3010311-1D2B-4746-818A-A9C444498FED.xcactivitylog</string>
+			<key>hasPrimaryLog</key>
+			<true/>
+			<key>primaryObservable</key>
+			<dict>
+				<key>highLevelStatus</key>
+				<string>S</string>
+				<key>totalNumberOfAnalyzerIssues</key>
+				<integer>0</integer>
+				<key>totalNumberOfErrors</key>
+				<integer>0</integer>
+				<key>totalNumberOfTestFailures</key>
+				<integer>0</integer>
+				<key>totalNumberOfWarnings</key>
+				<integer>0</integer>
+			</dict>
+			<key>schemeIdentifier-containerName</key>
+			<string>Project Plant project</string>
+			<key>schemeIdentifier-schemeName</key>
+			<string>Project Plant</string>
+			<key>schemeIdentifier-sharedScheme</key>
+			<integer>1</integer>
+			<key>signature</key>
+			<string>Build Project Plant</string>
+			<key>timeStartedRecording</key>
+			<real>731188249.23039699</real>
+			<key>timeStoppedRecording</key>
+			<real>731188252.19405103</real>
+			<key>title</key>
+			<string>Build Project Plant</string>
+			<key>uniqueIdentifier</key>
+			<string>F3010311-1D2B-4746-818A-A9C444498FED</string>
+		</dict>
+		<key>F8DB73D6-F42E-429C-AF94-3800BE4CA108</key>
+		<dict>
+			<key>className</key>
+			<string>IDEActivityLogSection</string>
+			<key>documentTypeString</key>
+			<string>&lt;nil&gt;</string>
+			<key>domainType</key>
+			<string>Xcode.IDEActivityLogDomainType.BuildLog</string>
+			<key>fileName</key>
+			<string>F8DB73D6-F42E-429C-AF94-3800BE4CA108.xcactivitylog</string>
+			<key>hasPrimaryLog</key>
+			<true/>
+			<key>primaryObservable</key>
+			<dict>
+				<key>highLevelStatus</key>
+				<string>W</string>
+				<key>totalNumberOfAnalyzerIssues</key>
+				<integer>0</integer>
+				<key>totalNumberOfErrors</key>
+				<integer>0</integer>
+				<key>totalNumberOfTestFailures</key>
+				<integer>0</integer>
+				<key>totalNumberOfWarnings</key>
+				<integer>1</integer>
+			</dict>
+			<key>schemeIdentifier-containerName</key>
+			<string>Project Plant project</string>
+			<key>schemeIdentifier-schemeName</key>
+			<string>Project Plant</string>
+			<key>schemeIdentifier-sharedScheme</key>
+			<integer>1</integer>
+			<key>signature</key>
+			<string>Build Project Plant</string>
+			<key>timeStartedRecording</key>
+			<real>731186020.75712395</real>
+			<key>timeStoppedRecording</key>
+			<real>731186021.17514706</real>
+			<key>title</key>
+			<string>Build Project Plant</string>
+			<key>uniqueIdentifier</key>
+			<string>F8DB73D6-F42E-429C-AF94-3800BE4CA108</string>
+		</dict>
+	</dict>
+</dict>
+</plist>
