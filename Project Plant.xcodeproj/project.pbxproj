@@ -17,6 +17,7 @@
 		1C1232D32B952A620010518C /* TabBarRootViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1C1232D22B952A620010518C /* TabBarRootViewController.swift */; };
 		1C1232D52B9538750010518C /* CoreDataStackViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1C1232D42B9538750010518C /* CoreDataStackViewController.swift */; };
 		1C1232D82B953D800010518C /* Project_Plant.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = 1C1232D62B953D800010518C /* Project_Plant.xcdatamodeld */; };
+		1C1232DA2B9541510010518C /* PlantGalleryViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1C1232D92B9541510010518C /* PlantGalleryViewController.swift */; };
 		1CDA96542B95015D003E399F /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1CDA96532B95015D003E399F /* AppDelegate.swift */; };
 		1CDA96562B95015D003E399F /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1CDA96552B95015D003E399F /* SceneDelegate.swift */; };
 		1CDA965B2B95015D003E399F /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 1CDA96592B95015D003E399F /* Main.storyboard */; };
@@ -56,6 +57,7 @@
 		1C1232D22B952A620010518C /* TabBarRootViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TabBarRootViewController.swift; sourceTree = "<group>"; };
 		1C1232D42B9538750010518C /* CoreDataStackViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CoreDataStackViewController.swift; sourceTree = "<group>"; };
 		1C1232D72B953D800010518C /* Project_Plant.xcdatamodel */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcdatamodel; path = Project_Plant.xcdatamodel; sourceTree = "<group>"; };
+		1C1232D92B9541510010518C /* PlantGalleryViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PlantGalleryViewController.swift; sourceTree = "<group>"; };
 		1CDA96502B95015D003E399F /* Project Plant.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "Project Plant.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		1CDA96532B95015D003E399F /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		1CDA96552B95015D003E399F /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
@@ -115,6 +117,7 @@
 				1C1232D22B952A620010518C /* TabBarRootViewController.swift */,
 				1C1232D42B9538750010518C /* CoreDataStackViewController.swift */,
 				B1CA71C82B95100900A54CC3 /* HomePageViewController.swift */,
+				1C1232D92B9541510010518C /* PlantGalleryViewController.swift */,
 			);
 			path = Controllers;
 			sourceTree = "<group>";
@@ -325,6 +328,7 @@
 				1C1232C52B950B270010518C /* RecommenderRequest.swift in Sources */,
 				1C1232D32B952A620010518C /* TabBarRootViewController.swift in Sources */,
 				1C1232BE2B9507BA0010518C /* PlantModelAPIClient.swift in Sources */,
+				1C1232DA2B9541510010518C /* PlantGalleryViewController.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
