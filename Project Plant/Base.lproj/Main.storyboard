@@ -182,10 +182,10 @@
             </objects>
             <point key="canvasLocation" x="598" y="-963"/>
         </scene>
-        <!--View Controller-->
+        <!--Plant Gallery View Controller-->
         <scene sceneID="KLp-lT-JIp">
             <objects>
-                <viewController id="ACS-vy-T9N" sceneMemberID="viewController">
+                <viewController id="ACS-vy-T9N" customClass="PlantGalleryViewController" customModule="Project_Plant" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="OJ6-qd-TqB">
                         <rect key="frame" x="0.0" y="0.0" width="393" height="842"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
