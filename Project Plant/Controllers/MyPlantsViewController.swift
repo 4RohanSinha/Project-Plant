@@ -12,8 +12,8 @@ class MyPlantsViewController: CoreDataStackViewController {
 
     @IBOutlet weak var plantImageView: UIImageView!
     @IBOutlet weak var imageViewPageControl: UIPageControl!
-    @IBOutlet weak var plantNameTextLabel: UILabel!
-    @IBOutlet weak var recommendationTextField: UITextField!
+    @IBOutlet weak var plantNameTextLabel: UITextField!
+    @IBOutlet weak var recommendationTextField: UITextView!
     
     var plantsFetchedResultsController: NSFetchedResultsController<Plant>?
     
@@ -39,6 +39,10 @@ class MyPlantsViewController: CoreDataStackViewController {
         plantsFetchedResultsController?.delegate = nil
         plantsFetchedResultsController = nil
     }
+    
+    @IBAction func seeDetailedPlantView(_ sender: Any) {
+    }
+    
     
     func setPageControlView() {
         imageViewPageControl.numberOfPages = plantsFetchedResultsController?.sections?[0].numberOfObjects ?? 0
