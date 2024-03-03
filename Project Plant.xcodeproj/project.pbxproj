@@ -114,6 +114,7 @@
 				1C1232CB2B9522750010518C /* MyPlantsViewController.swift */,
 				1C1232D22B952A620010518C /* TabBarRootViewController.swift */,
 				1C1232D42B9538750010518C /* CoreDataStackViewController.swift */,
+				B1CA71C82B95100900A54CC3 /* HomePageViewController.swift */,
 			);
 			path = Controllers;
 			sourceTree = "<group>";
@@ -159,7 +160,6 @@
 				1CDA965F2B95015E003E399F /* Assets.xcassets */,
 				1CDA96612B95015E003E399F /* LaunchScreen.storyboard */,
 				1CDA96642B95015E003E399F /* Info.plist */,
-				B1CA71C82B95100900A54CC3 /* HomePageViewController.swift */,
 			);
 			path = "Project Plant";
 			sourceTree = "<group>";
