@@ -312,6 +312,21 @@ SWIFT_CLASS("_TtC13Project_Plant11AppDelegate")
 - (nonnull instancetype)init OBJC_DESIGNATED_INITIALIZER;
 @end
 
+@class UILabel;
+@class NSString;
+@class NSBundle;
+@class NSCoder;
+
+SWIFT_CLASS("_TtC13Project_Plant22HomePageViewController")
+@interface HomePageViewController : UIViewController
+@property (nonatomic, weak) IBOutlet UILabel * _Null_unspecified FactLabel;
+- (IBAction)MyPlantsOnButtonClick:(id _Nonnull)sender;
+- (IBAction)RecommendationsOnButtonClick:(id _Nonnull)sender;
+- (void)viewDidLoad;
+- (nonnull instancetype)initWithNibName:(NSString * _Nullable)nibNameOrNil bundle:(NSBundle * _Nullable)nibBundleOrNil OBJC_DESIGNATED_INITIALIZER;
+- (nullable instancetype)initWithCoder:(NSCoder * _Nonnull)coder OBJC_DESIGNATED_INITIALIZER;
+@end
+
 @class UIWindow;
 @class UIScene;
 
@@ -329,9 +344,6 @@ SWIFT_CLASS("_TtC13Project_Plant13SceneDelegate")
 
 
 
-@class NSString;
-@class NSBundle;
-@class NSCoder;
 
 SWIFT_CLASS("_TtC13Project_Plant14ViewController")
 @interface ViewController : UIViewController
