@@ -216,6 +216,48 @@
 			<key>uniqueIdentifier</key>
 			<string>8888FCA2-22D4-454E-AB33-077FDE76F6F4</string>
 		</dict>
+		<key>9ADFDFC0-61CF-4465-B3C8-1BC8B28FF114</key>
+		<dict>
+			<key>className</key>
+			<string>IDEActivityLogSection</string>
+			<key>documentTypeString</key>
+			<string>&lt;nil&gt;</string>
+			<key>domainType</key>
+			<string>Xcode.IDEActivityLogDomainType.BuildLog</string>
+			<key>fileName</key>
+			<string>9ADFDFC0-61CF-4465-B3C8-1BC8B28FF114.xcactivitylog</string>
+			<key>hasPrimaryLog</key>
+			<true/>
+			<key>primaryObservable</key>
+			<dict>
+				<key>highLevelStatus</key>
+				<string>S</string>
+				<key>totalNumberOfAnalyzerIssues</key>
+				<integer>0</integer>
+				<key>totalNumberOfErrors</key>
+				<integer>0</integer>
+				<key>totalNumberOfTestFailures</key>
+				<integer>0</integer>
+				<key>totalNumberOfWarnings</key>
+				<integer>0</integer>
+			</dict>
+			<key>schemeIdentifier-containerName</key>
+			<string>Project Plant project</string>
+			<key>schemeIdentifier-schemeName</key>
+			<string>Project Plant</string>
+			<key>schemeIdentifier-sharedScheme</key>
+			<integer>1</integer>
+			<key>signature</key>
+			<string>Build Project Plant</string>
+			<key>timeStartedRecording</key>
+			<real>731189130.50283802</real>
+			<key>timeStoppedRecording</key>
+			<real>731189130.73170102</real>
+			<key>title</key>
+			<string>Build Project Plant</string>
+			<key>uniqueIdentifier</key>
+			<string>9ADFDFC0-61CF-4465-B3C8-1BC8B28FF114</string>
+		</dict>
 		<key>A551BFAA-9826-4C0B-B5BA-02A0CC7AD686</key>
 		<dict>
 			<key>className</key>

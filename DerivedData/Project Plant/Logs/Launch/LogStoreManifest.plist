@@ -67,6 +67,67 @@
 			<key>uniqueIdentifier</key>
 			<string>18BFA124-9638-4356-9824-2E86AE54069B</string>
 		</dict>
+		<key>312CE1BF-7BFB-41CB-96A7-E30517135450</key>
+		<dict>
+			<key>auxiliaryLogUniqueIdentifier</key>
+			<string>9ADFDFC0-61CF-4465-B3C8-1BC8B28FF114</string>
+			<key>auxiliaryObservable</key>
+			<dict>
+				<key>highLevelStatus</key>
+				<string>S</string>
+				<key>totalNumberOfAnalyzerIssues</key>
+				<integer>0</integer>
+				<key>totalNumberOfErrors</key>
+				<integer>0</integer>
+				<key>totalNumberOfTestFailures</key>
+				<integer>0</integer>
+				<key>totalNumberOfWarnings</key>
+				<integer>0</integer>
+			</dict>
+			<key>className</key>
+			<string>IDESchemeActionsInvocationRecord</string>
+			<key>documentTypeString</key>
+			<string>&lt;nil&gt;</string>
+			<key>domainType</key>
+			<string>com.apple.dt.IDE.LaunchSchemeAction</string>
+			<key>fileName</key>
+			<string>Run-Project Plant-2024.03.03_12-05-30--0800.xcresult</string>
+			<key>hasAuxiliaryLog</key>
+			<true/>
+			<key>hasConsoleLog</key>
+			<true/>
+			<key>hasPrimaryLog</key>
+			<true/>
+			<key>primaryObservable</key>
+			<dict>
+				<key>highLevelStatus</key>
+				<string>S</string>
+				<key>totalNumberOfAnalyzerIssues</key>
+				<integer>0</integer>
+				<key>totalNumberOfErrors</key>
+				<integer>0</integer>
+				<key>totalNumberOfTestFailures</key>
+				<integer>0</integer>
+				<key>totalNumberOfWarnings</key>
+				<integer>0</integer>
+			</dict>
+			<key>schemeIdentifier-containerName</key>
+			<string>Project Plant project</string>
+			<key>schemeIdentifier-schemeName</key>
+			<string>Project Plant</string>
+			<key>schemeIdentifier-sharedScheme</key>
+			<integer>1</integer>
+			<key>signature</key>
+			<string>Run Project Plant</string>
+			<key>timeStartedRecording</key>
+			<real>731189130.49910903</real>
+			<key>timeStoppedRecording</key>
+			<real>0.0</real>
+			<key>title</key>
+			<string>Run Project Plant</string>
+			<key>uniqueIdentifier</key>
+			<string>312CE1BF-7BFB-41CB-96A7-E30517135450</string>
+		</dict>
 		<key>3473FCFD-AEB6-4FDF-BA44-B1686B3628D8</key>
 		<dict>
 			<key>auxiliaryLogUniqueIdentifier</key>

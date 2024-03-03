@@ -17,6 +17,7 @@
 		1CDA966E2B95015E003E399F /* Project_PlantTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1CDA966D2B95015E003E399F /* Project_PlantTests.swift */; };
 		1CDA96782B95015E003E399F /* Project_PlantUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1CDA96772B95015E003E399F /* Project_PlantUITests.swift */; };
 		1CDA967A2B95015E003E399F /* Project_PlantUITestsLaunchTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1CDA96792B95015E003E399F /* Project_PlantUITestsLaunchTests.swift */; };
+		B1CA71C92B95100900A54CC3 /* HomePageViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = B1CA71C82B95100900A54CC3 /* HomePageViewController.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -51,6 +52,7 @@
 		1CDA96732B95015E003E399F /* Project PlantUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = "Project PlantUITests.xctest"; sourceTree = BUILT_PRODUCTS_DIR; };
 		1CDA96772B95015E003E399F /* Project_PlantUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Project_PlantUITests.swift; sourceTree = "<group>"; };
 		1CDA96792B95015E003E399F /* Project_PlantUITestsLaunchTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Project_PlantUITestsLaunchTests.swift; sourceTree = "<group>"; };
+		B1CA71C82B95100900A54CC3 /* HomePageViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomePageViewController.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -109,6 +111,7 @@
 				1CDA96612B95015E003E399F /* LaunchScreen.storyboard */,
 				1CDA96642B95015E003E399F /* Info.plist */,
 				1CDA965C2B95015D003E399F /* Project_Plant.xcdatamodeld */,
+				B1CA71C82B95100900A54CC3 /* HomePageViewController.swift */,
 			);
 			path = "Project Plant";
 			sourceTree = "<group>";
@@ -264,6 +267,7 @@
 				1CDA96582B95015D003E399F /* ViewController.swift in Sources */,
 				1CDA96542B95015D003E399F /* AppDelegate.swift in Sources */,
 				1CDA96562B95015D003E399F /* SceneDelegate.swift in Sources */,
+				B1CA71C92B95100900A54CC3 /* HomePageViewController.swift in Sources */,
 				1CDA965E2B95015D003E399F /* Project_Plant.xcdatamodeld in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
