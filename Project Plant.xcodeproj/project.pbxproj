@@ -7,9 +7,17 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		1C1232BE2B9507BA0010518C /* PlantModelAPIClient.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1C1232BD2B9507BA0010518C /* PlantModelAPIClient.swift */; };
+		1C1232C12B950A070010518C /* DiagnosisRequest.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1C1232C02B950A070010518C /* DiagnosisRequest.swift */; };
+		1C1232C32B950A3D0010518C /* DiagnosisResponse.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1C1232C22B950A3D0010518C /* DiagnosisResponse.swift */; };
+		1C1232C52B950B270010518C /* RecommenderRequest.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1C1232C42B950B270010518C /* RecommenderRequest.swift */; };
+		1C1232C72B9521D50010518C /* RecommenderResponse.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1C1232C62B9521D50010518C /* RecommenderResponse.swift */; };
+		1C1232CC2B9522750010518C /* MyPlantsViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1C1232CB2B9522750010518C /* MyPlantsViewController.swift */; };
+		1C1232CF2B9528E10010518C /* DataController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1C1232CE2B9528E10010518C /* DataController.swift */; };
+		1C1232D12B952A0D0010518C /* CoreDataStackViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1C1232D02B952A0D0010518C /* CoreDataStackViewController.swift */; };
+		1C1232D32B952A620010518C /* TabBarRootViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1C1232D22B952A620010518C /* TabBarRootViewController.swift */; };
 		1CDA96542B95015D003E399F /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1CDA96532B95015D003E399F /* AppDelegate.swift */; };
 		1CDA96562B95015D003E399F /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1CDA96552B95015D003E399F /* SceneDelegate.swift */; };
-		1CDA96582B95015D003E399F /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1CDA96572B95015D003E399F /* ViewController.swift */; };
 		1CDA965B2B95015D003E399F /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 1CDA96592B95015D003E399F /* Main.storyboard */; };
 		1CDA965E2B95015D003E399F /* Project_Plant.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = 1CDA965C2B95015D003E399F /* Project_Plant.xcdatamodeld */; };
 		1CDA96602B95015E003E399F /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 1CDA965F2B95015E003E399F /* Assets.xcassets */; };
@@ -37,10 +45,18 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		1C1232BD2B9507BA0010518C /* PlantModelAPIClient.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PlantModelAPIClient.swift; sourceTree = "<group>"; };
+		1C1232C02B950A070010518C /* DiagnosisRequest.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DiagnosisRequest.swift; sourceTree = "<group>"; };
+		1C1232C22B950A3D0010518C /* DiagnosisResponse.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DiagnosisResponse.swift; sourceTree = "<group>"; };
+		1C1232C42B950B270010518C /* RecommenderRequest.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RecommenderRequest.swift; sourceTree = "<group>"; };
+		1C1232C62B9521D50010518C /* RecommenderResponse.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RecommenderResponse.swift; sourceTree = "<group>"; };
+		1C1232CB2B9522750010518C /* MyPlantsViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MyPlantsViewController.swift; sourceTree = "<group>"; };
+		1C1232CE2B9528E10010518C /* DataController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DataController.swift; sourceTree = "<group>"; };
+		1C1232D02B952A0D0010518C /* CoreDataStackViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CoreDataStackViewController.swift; sourceTree = "<group>"; };
+		1C1232D22B952A620010518C /* TabBarRootViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TabBarRootViewController.swift; sourceTree = "<group>"; };
 		1CDA96502B95015D003E399F /* Project Plant.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "Project Plant.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		1CDA96532B95015D003E399F /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		1CDA96552B95015D003E399F /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
-		1CDA96572B95015D003E399F /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
 		1CDA965A2B95015D003E399F /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		1CDA965D2B95015D003E399F /* Project_Plant.xcdatamodel */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcdatamodel; path = Project_Plant.xcdatamodel; sourceTree = "<group>"; };
 		1CDA965F2B95015E003E399F /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
@@ -78,6 +94,37 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		1C1232BF2B9509F20010518C /* Network Services */ = {
+			isa = PBXGroup;
+			children = (
+				1C1232BD2B9507BA0010518C /* PlantModelAPIClient.swift */,
+				1C1232C02B950A070010518C /* DiagnosisRequest.swift */,
+				1C1232C22B950A3D0010518C /* DiagnosisResponse.swift */,
+				1C1232C42B950B270010518C /* RecommenderRequest.swift */,
+				1C1232C62B9521D50010518C /* RecommenderResponse.swift */,
+			);
+			path = "Network Services";
+			sourceTree = "<group>";
+		};
+		1C1232C82B95223B0010518C /* Controllers */ = {
+			isa = PBXGroup;
+			children = (
+				1C1232CB2B9522750010518C /* MyPlantsViewController.swift */,
+				1C1232D02B952A0D0010518C /* CoreDataStackViewController.swift */,
+				1C1232D22B952A620010518C /* TabBarRootViewController.swift */,
+			);
+			path = Controllers;
+			sourceTree = "<group>";
+		};
+		1C1232CD2B9528D30010518C /* Model */ = {
+			isa = PBXGroup;
+			children = (
+				1CDA965C2B95015D003E399F /* Project_Plant.xcdatamodeld */,
+				1C1232CE2B9528E10010518C /* DataController.swift */,
+			);
+			path = Model;
+			sourceTree = "<group>";
+		};
 		1CDA96472B95015D003E399F = {
 			isa = PBXGroup;
 			children = (
@@ -101,14 +148,15 @@
 		1CDA96522B95015D003E399F /* Project Plant */ = {
 			isa = PBXGroup;
 			children = (
+				1C1232CD2B9528D30010518C /* Model */,
+				1C1232C82B95223B0010518C /* Controllers */,
+				1C1232BF2B9509F20010518C /* Network Services */,
 				1CDA96532B95015D003E399F /* AppDelegate.swift */,
 				1CDA96552B95015D003E399F /* SceneDelegate.swift */,
-				1CDA96572B95015D003E399F /* ViewController.swift */,
 				1CDA96592B95015D003E399F /* Main.storyboard */,
 				1CDA965F2B95015E003E399F /* Assets.xcassets */,
 				1CDA96612B95015E003E399F /* LaunchScreen.storyboard */,
 				1CDA96642B95015E003E399F /* Info.plist */,
-				1CDA965C2B95015D003E399F /* Project_Plant.xcdatamodeld */,
 			);
 			path = "Project Plant";
 			sourceTree = "<group>";
@@ -261,10 +309,18 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				1CDA96582B95015D003E399F /* ViewController.swift in Sources */,
+				1C1232C72B9521D50010518C /* RecommenderResponse.swift in Sources */,
 				1CDA96542B95015D003E399F /* AppDelegate.swift in Sources */,
+				1C1232C32B950A3D0010518C /* DiagnosisResponse.swift in Sources */,
 				1CDA96562B95015D003E399F /* SceneDelegate.swift in Sources */,
+				1C1232CC2B9522750010518C /* MyPlantsViewController.swift in Sources */,
+				1C1232CF2B9528E10010518C /* DataController.swift in Sources */,
+				1C1232C12B950A070010518C /* DiagnosisRequest.swift in Sources */,
+				1C1232C52B950B270010518C /* RecommenderRequest.swift in Sources */,
+				1C1232D32B952A620010518C /* TabBarRootViewController.swift in Sources */,
+				1C1232BE2B9507BA0010518C /* PlantModelAPIClient.swift in Sources */,
 				1CDA965E2B95015D003E399F /* Project_Plant.xcdatamodeld in Sources */,
+				1C1232D12B952A0D0010518C /* CoreDataStackViewController.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
