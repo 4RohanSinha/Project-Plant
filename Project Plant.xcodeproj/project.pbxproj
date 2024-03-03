@@ -25,6 +25,7 @@
 		1CDA966E2B95015E003E399F /* Project_PlantTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1CDA966D2B95015E003E399F /* Project_PlantTests.swift */; };
 		1CDA96782B95015E003E399F /* Project_PlantUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1CDA96772B95015E003E399F /* Project_PlantUITests.swift */; };
 		1CDA967A2B95015E003E399F /* Project_PlantUITestsLaunchTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1CDA96792B95015E003E399F /* Project_PlantUITestsLaunchTests.swift */; };
+		B1CA71C92B95100900A54CC3 /* HomePageViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = B1CA71C82B95100900A54CC3 /* HomePageViewController.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -67,6 +68,7 @@
 		1CDA96732B95015E003E399F /* Project PlantUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = "Project PlantUITests.xctest"; sourceTree = BUILT_PRODUCTS_DIR; };
 		1CDA96772B95015E003E399F /* Project_PlantUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Project_PlantUITests.swift; sourceTree = "<group>"; };
 		1CDA96792B95015E003E399F /* Project_PlantUITestsLaunchTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Project_PlantUITestsLaunchTests.swift; sourceTree = "<group>"; };
+		B1CA71C82B95100900A54CC3 /* HomePageViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomePageViewController.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -157,6 +159,8 @@
 				1CDA965F2B95015E003E399F /* Assets.xcassets */,
 				1CDA96612B95015E003E399F /* LaunchScreen.storyboard */,
 				1CDA96642B95015E003E399F /* Info.plist */,
+				1CDA965C2B95015D003E399F /* Project_Plant.xcdatamodeld */,
+				B1CA71C82B95100900A54CC3 /* HomePageViewController.swift */,
 			);
 			path = "Project Plant";
 			sourceTree = "<group>";
@@ -242,7 +246,7 @@
 			attributes = {
 				BuildIndependentTargetsInParallel = 1;
 				LastSwiftUpdateCheck = 1430;
-				LastUpgradeCheck = 1430;
+				LastUpgradeCheck = 1500;
 				TargetAttributes = {
 					1CDA964F2B95015D003E399F = {
 						CreatedOnToolsVersion = 14.3.1;
@@ -314,6 +318,7 @@
 				1CDA96542B95015D003E399F /* AppDelegate.swift in Sources */,
 				1C1232C32B950A3D0010518C /* DiagnosisResponse.swift in Sources */,
 				1CDA96562B95015D003E399F /* SceneDelegate.swift in Sources */,
+				B1CA71C92B95100900A54CC3 /* HomePageViewController.swift in Sources */,
 				1C1232CC2B9522750010518C /* MyPlantsViewController.swift in Sources */,
 				1C1232CF2B9528E10010518C /* DataController.swift in Sources */,
 				1C1232C12B950A070010518C /* DiagnosisRequest.swift in Sources */,
@@ -412,6 +417,7 @@
 				DEBUG_INFORMATION_FORMAT = dwarf;
 				ENABLE_STRICT_OBJC_MSGSEND = YES;
 				ENABLE_TESTABILITY = YES;
+				ENABLE_USER_SCRIPT_SANDBOXING = YES;
 				GCC_C_LANGUAGE_STANDARD = gnu11;
 				GCC_DYNAMIC_NO_PIC = NO;
 				GCC_NO_COMMON_BLOCKS = YES;
@@ -472,6 +478,7 @@
 				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
 				ENABLE_NS_ASSERTIONS = NO;
 				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_USER_SCRIPT_SANDBOXING = YES;
 				GCC_C_LANGUAGE_STANDARD = gnu11;
 				GCC_NO_COMMON_BLOCKS = YES;
 				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
@@ -497,7 +504,7 @@
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
 				CODE_SIGN_STYLE = Automatic;
 				CURRENT_PROJECT_VERSION = 1;
-				DEVELOPMENT_TEAM = Z436KNXBM3;
+				DEVELOPMENT_TEAM = S6KAJJ4CV9;
 				GENERATE_INFOPLIST_FILE = YES;
 				INFOPLIST_FILE = "Project Plant/Info.plist";
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
@@ -525,7 +532,7 @@
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
 				CODE_SIGN_STYLE = Automatic;
 				CURRENT_PROJECT_VERSION = 1;
-				DEVELOPMENT_TEAM = Z436KNXBM3;
+				DEVELOPMENT_TEAM = S6KAJJ4CV9;
 				GENERATE_INFOPLIST_FILE = YES;
 				INFOPLIST_FILE = "Project Plant/Info.plist";
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
