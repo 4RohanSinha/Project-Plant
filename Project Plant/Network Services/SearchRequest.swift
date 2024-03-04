@@ -7,6 +7,6 @@
 
 import Foundation
 
-class SearchRequest: Codable {
+struct SearchRequest: Codable {
     var query: String
 }

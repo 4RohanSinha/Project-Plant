@@ -13,11 +13,23 @@ class SearchResultTableCell: UITableViewCell {
     @IBOutlet weak var droplet2: UIImageView!
     @IBOutlet weak var droplet3: UIImageView!
     
+    @IBOutlet weak var plantImgView: UIImageView!
+    
     func configureWithResult(res: SearchResult) {
         plantNameLabel.text = res.plant_name
         
         droplet1.isHidden = false
         
+        if (res.watering_level == "average") {
+            droplet2.isHidden = false
+            droplet3.isHidden = true
+        }
         
+        if (res.watering_level == "frequent") {
+            droplet2.isHidden = false
+            droplet3.isHidden = false
+        }
+        
+        //request image.
     }
 }

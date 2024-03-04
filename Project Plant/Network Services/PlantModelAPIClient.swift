@@ -16,6 +16,7 @@ class PlantModelAPIClient {
         
         case diagnosis
         case recommender
+        case search
         
         private var urlStringVal: String {
             switch self {
@@ -23,6 +24,8 @@ class PlantModelAPIClient {
                 return Endpoints.plantModelBase + Endpoints.diagnosisEnd
             case let .recommender:
                 return Endpoints.plantModelBase + Endpoints.recommenderEnd
+            case let .search:
+                return Endpoints.plantModelBase + Endpoints.searchEnd
             }
         }
         
@@ -37,6 +40,12 @@ class PlantModelAPIClient {
     
     class func createRecommenderRequest() -> RecommenderRequest {
         return RecommenderRequest(plants: [])
+    }
+    
+    class func getSearchResults(query: String, completion: @escaping (SearchResultResponse?, Error?) -> Void) {
+        let req = SearchRequest(query: query)
+        
+        postRequest(url: Endpoints.search.url, requestData: req, completion: completion)
     }
     
     class func postRequest<RequestType: Encodable, ResponseType: Decodable>(url: URL, requestData: RequestType, completion: @escaping (ResponseType?, Error?) -> Void) {

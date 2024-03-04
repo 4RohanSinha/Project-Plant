@@ -7,18 +7,31 @@
 
 import UIKit
 
-class SearchPlantViewController: UIViewController {
+class SearchPlanViewController: UIViewController {
 
     @IBOutlet weak var recommendationTableView: UITableView!
     @IBOutlet weak var searchBar: UITextField!
     
     var results: [SearchResult] = []
     
+    var task: URLSessionTask?
+    
     override func viewDidLoad() {
         super.viewDidLoad()
+        results = [SearchResult(plant_name: "test", watering_level: "average")]
+        recommendationTableView.dataSource = self
+        recommendationTableView.delegate = self
     }
     
+    func getSearchResults() {
+        results.append(contentsOf: results)
+        recommendationTableView.reloadData()
+    }
 
+    @IBAction func updateSearchResult(_ sender: Any) {
+        task?.cancel()
+        getSearchResults()
+    }
     /*
     // MARK: - Navigation
 
@@ -31,7 +44,7 @@ class SearchPlantViewController: UIViewController {
 
 }
 
-extension SearchPlantViewController: UITableViewDataSource, UITableViewDelegate {
+extension SearchPlanViewController: UITableViewDataSource, UITableViewDelegate {
     func numberOfSections(in tableView: UITableView) -> Int {
         return 1
     }
@@ -41,6 +54,17 @@ extension SearchPlantViewController: UITableViewDataSource, UITableViewDelegate 
     }
     
     func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
+        
+        if let cell = tableView.dequeueReusableCell(withIdentifier: "searchResultCell") as? SearchResultTableCell {
+            cell.configureWithResult(res: results[indexPath.row])
+            cell.selectionStyle = .none
+            return cell
+        }
+        
         return UITableViewCell()
+    }
+    
+    func tableView(_ tableView: UITableView, heightForRowAt indexPath: IndexPath) -> CGFloat {
+        return 150
     }
 }
