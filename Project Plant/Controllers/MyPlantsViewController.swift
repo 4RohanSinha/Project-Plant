@@ -13,14 +13,16 @@ class MyPlantsViewController: CoreDataStackViewController {
     @IBOutlet weak var plantImageView: UIImageView!
     @IBOutlet weak var imageViewPageControl: UIPageControl!
     @IBOutlet weak var plantNameTextLabel: UITextField!
+    @IBOutlet weak var viewStatsBtn: UIButton!
+    @IBOutlet weak var addPlantBtn: UIButton!
     @IBOutlet weak var recommendationTextField: UITextView!
     
     var plantsFetchedResultsController: NSFetchedResultsController<Plant>?
     
     func initFetchedResultsController() {
-        
+        print("TEST")
         guard let dataController = dataController else { return }
-        
+        print("TEST 2")
         let plantsFetchRequest = Plant.fetchRequest()
         let plantSortDescriptor = NSSortDescriptor(key: "plantId", ascending: true)
         plantsFetchRequest.sortDescriptors = [plantSortDescriptor]
@@ -30,9 +32,12 @@ class MyPlantsViewController: CoreDataStackViewController {
         
         do {
             try plantsFetchedResultsController?.performFetch()
+            print(plantsFetchedResultsController?.fetchedObjects?.count)
+            imageViewPageControl.numberOfPages = plantsFetchedResultsController?.fetchedObjects?.count ?? 1
         } catch {
             print("Error fetching plants")
         }
+        
     }
     
     func deinitFetchedResultsController() {
@@ -45,13 +50,40 @@ class MyPlantsViewController: CoreDataStackViewController {
     
     
     func setPageControlView() {
+        if (plantsFetchedResultsController?.fetchedObjects?.count == 0) {
+            viewStatsBtn.isHidden = true
+            addPlantBtn.isHidden = false
+        } else {
+            viewStatsBtn.isHidden = false
+            addPlantBtn.isHidden = true
+        }
+        
         imageViewPageControl.numberOfPages = plantsFetchedResultsController?.sections?[0].numberOfObjects ?? 0
     }
     
     func setImageView() {
-        guard let plantsFetchedResultsController = plantsFetchedResultsController, let currentPhotos = plantsFetchedResultsController.object(at: IndexPath(row: imageViewPageControl.currentPage, section: 0)).photos?.allObjects as? [Data], !currentPhotos.isEmpty else { return }
-       
-        plantImageView.image = UIImage(data: currentPhotos[currentPhotos.count-1])
+        guard let dataController = dataController, let plantsFetchedResultsController = plantsFetchedResultsController, let currentPlants = plantsFetchedResultsController.fetchedObjects else { return }
+        
+        if currentPlants.count < 1 {
+            return
+        }
+        
+        
+        guard let currentPhotos = currentPlants[imageViewPageControl.currentPage].photos?.allObjects as? [PlantPhoto] else { return }
+        if currentPhotos.count < 1 {
+            return
+        }
+        
+        plantNameTextLabel.text = currentPlants[imageViewPageControl.currentPage].name
+        
+        recommendationTextField.text = currentPlants[imageViewPageControl.currentPage].recommendation
+        
+        guard let imgData = currentPhotos[currentPhotos.count-1].photo else { return }
+        
+        
+        if let photoData = currentPhotos[currentPhotos.count-1].photo {
+            plantImageView.image = UIImage(data: imgData)
+        }
 
     }
     
@@ -62,8 +94,13 @@ class MyPlantsViewController: CoreDataStackViewController {
     
     override func viewDidLoad() {
         super.viewDidLoad()
-
+        navigationController?.tabBarController?.selectedIndex = 1
         // Do any additional setup after loading the view.
+        
+    }
+    
+    override func viewWillAppear(_ animated: Bool) {
+        super.viewWillAppear(animated)
         initFetchedResultsController()
         
         alignViews()
@@ -75,6 +112,17 @@ class MyPlantsViewController: CoreDataStackViewController {
         deinitFetchedResultsController()
     }
 
+    @IBAction func seePlantDetail(_ sender: Any) {
+        performSegue(withIdentifier: "seePlantDetail", sender: IndexPath(row: imageViewPageControl.currentPage, section: 0))
+    }
+    
+    @IBAction func addPlantScreen(_ sender: Any) {
+        tabBarController?.selectedIndex = 2
+    }
+    
+    @IBAction func changePageControlValue(_ sender: Any) {
+        alignViews()
+    }
     /*
     // MARK: - Navigation
 
@@ -84,6 +132,12 @@ class MyPlantsViewController: CoreDataStackViewController {
         // Pass the selected object to the new view controller.
     }
     */
+    
+    override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
+        if let galleryVC = segue.destination as? PlantGalleryViewController, let dataController = dataController, let indexPath = sender as? IndexPath, let plant = plantsFetchedResultsController?.object(at: indexPath) {
+            galleryVC.configureVC(dataController: dataController, plant: plant)
+        }
+    }
 
 }
 

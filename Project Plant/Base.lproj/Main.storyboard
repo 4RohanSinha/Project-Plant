@@ -11,10 +11,10 @@
         <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
     </dependencies>
     <scenes>
-        <!--Tab Bar Controller-->
+        <!--Tab Bar Root View Controller-->
         <scene sceneID="Fcz-wX-q4X">
             <objects>
-                <tabBarController id="XdU-Eu-vSS" sceneMemberID="viewController">
+                <tabBarController id="XdU-Eu-vSS" customClass="TabBarRootViewController" customModule="Project_Plant" customModuleProvider="target" sceneMemberID="viewController">
                     <tabBar key="tabBar" contentMode="scaleToFill" insetsLayoutMarginsFromSafeArea="NO" id="tUT-0o-iqe">
                         <rect key="frame" x="0.0" y="0.0" width="393" height="49"/>
                         <autoresizingMask key="autoresizingMask"/>
@@ -38,8 +38,22 @@
                         <rect key="frame" x="0.0" y="0.0" width="393" height="852"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Welcome to" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="HoS-VR-loX">
+                                <rect key="frame" x="110" y="113" width="175" height="39"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <fontDescription key="fontDescription" name="GeezaPro-Bold" family="Geeza Pro" pointSize="31"/>
+                                <color key="textColor" red="0.21965619810000001" green="0.58039218189999997" blue="0.55419293380000001" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Project Plant!" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="ADQ-3M-fcF">
+                                <rect key="frame" x="96" y="160" width="201" height="39"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <fontDescription key="fontDescription" name="GeezaPro-Bold" family="Geeza Pro" pointSize="31"/>
+                                <color key="textColor" red="0.21965619810000001" green="0.58039218189999997" blue="0.55419293380000001" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
+                                <nil key="highlightedColor"/>
+                            </label>
                             <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="3af-Nk-6bZ">
-                                <rect key="frame" x="147" y="409" width="99" height="35"/>
+                                <rect key="frame" x="147" y="309" width="99" height="35"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <color key="backgroundColor" red="0.0" green="0.82040506849793815" blue="0.60920113120331076" alpha="0.10483099489795919" colorSpace="custom" customColorSpace="displayP3"/>
                                 <color key="tintColor" red="0.31372550129999999" green="0.58039218189999997" blue="0.57254904510000004" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
@@ -50,21 +64,21 @@
                                 </connections>
                             </button>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Fun Fact" textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="4" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Uru-8T-ynz" userLabel="FactLabel">
-                                <rect key="frame" x="36" y="595" width="323" height="125"/>
+                                <rect key="frame" x="36" y="495" width="323" height="240"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="17"/>
                                 <nil key="textColor"/>
                                 <nil key="highlightedColor"/>
                             </label>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Fun  Fact  ~" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="dLh-21-dKa">
-                                <rect key="frame" x="150" y="582" width="95" height="20"/>
+                                <rect key="frame" x="150" y="482" width="95" height="20"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <fontDescription key="fontDescription" name="Farah" family="Farah" pointSize="20"/>
                                 <color key="textColor" red="0.21965619810000001" green="0.58039218189999997" blue="0.55419293380000001" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
                                 <nil key="highlightedColor"/>
                             </label>
                             <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="JSf-m0-vul">
-                                <rect key="frame" x="114" y="483" width="166" height="35"/>
+                                <rect key="frame" x="114" y="383" width="166" height="35"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <color key="backgroundColor" red="0.0" green="0.82040506849999995" blue="0.60920113119999997" alpha="0.1048309949" colorSpace="custom" customColorSpace="displayP3"/>
                                 <color key="tintColor" red="0.31372550129999999" green="0.58039218189999997" blue="0.57254904510000004" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
@@ -74,13 +88,6 @@
                                     <action selector="RecommendationsOnButtonClick:" destination="mSD-cw-EIK" eventType="touchUpInside" id="0xq-V3-TYF"/>
                                 </connections>
                             </button>
-                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Most Valuable Plant" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="HoS-VR-loX">
-                                <rect key="frame" x="50" y="113" width="294" height="39"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                <fontDescription key="fontDescription" name="GeezaPro-Bold" family="Geeza Pro" pointSize="31"/>
-                                <color key="textColor" red="0.21965619810000001" green="0.58039218189999997" blue="0.55419293380000001" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
-                                <nil key="highlightedColor"/>
-                            </label>
                         </subviews>
                         <viewLayoutGuide key="safeArea" id="XVM-er-F0f"/>
                         <color key="backgroundColor" systemColor="systemBackgroundColor"/>
@@ -95,13 +102,13 @@
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="MBT-Uu-RLV" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="598" y="-273"/>
+            <point key="canvasLocation" x="597.70992366412213" y="-273.23943661971833"/>
         </scene>
-        <!--Item-->
+        <!--My Plants-->
         <scene sceneID="3i8-F5-4O6">
             <objects>
                 <navigationController id="E2N-Uv-HUn" sceneMemberID="viewController">
-                    <tabBarItem key="tabBarItem" title="Item" image="leaf.fill" catalog="system" selectedImage="leaf.fill" id="wPc-0d-74b"/>
+                    <tabBarItem key="tabBarItem" title="My Plants" image="leaf.fill" catalog="system" selectedImage="leaf.fill" id="wPc-0d-74b"/>
                     <navigationBar key="navigationBar" contentMode="scaleToFill" id="tAM-7e-vwA">
                         <rect key="frame" x="0.0" y="59" width="393" height="44"/>
                         <autoresizingMask key="autoresizingMask"/>
@@ -125,18 +132,21 @@
                             <pageControl opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" numberOfPages="3" translatesAutoresizingMaskIntoConstraints="NO" id="Hv5-vA-gd7">
                                 <rect key="frame" x="138" y="449" width="116" height="26"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                <color key="backgroundColor" red="0.0" green="0.82040506849999995" blue="0.60920113119999997" alpha="0.1048309949" colorSpace="custom" customColorSpace="displayP3"/>
+                                <color key="backgroundColor" systemColor="systemMintColor"/>
                                 <color key="tintColor" white="0.33333333329999998" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                <connections>
+                                    <action selector="changePageControlValue:" destination="BYZ-38-t0r" eventType="valueChanged" id="QCz-uD-W6M"/>
+                                </connections>
                             </pageControl>
                             <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="0db-CN-Guy">
                                 <rect key="frame" x="57" y="133" width="279" height="285"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <color key="tintColor" red="0.0" green="0.82040506849999995" blue="0.60920113119999997" alpha="0.1048309949" colorSpace="custom" customColorSpace="displayP3"/>
                             </imageView>
-                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Recommendations:" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="2cN-Zn-138">
-                                <rect key="frame" x="123" y="528" width="147" height="21"/>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Recommendations for this plant based on its health:" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="2cN-Zn-138">
+                                <rect key="frame" x="29" y="528" width="336" height="17"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="14"/>
                                 <color key="textColor" red="0.21965619810000001" green="0.58039218189999997" blue="0.55419293380000001" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
                                 <nil key="highlightedColor"/>
                             </label>
@@ -149,13 +159,13 @@
                                 <buttonConfiguration key="configuration" style="tinted" title="View Stats"/>
                                 <connections>
                                     <action selector="seeDetailedPlantView:" destination="BYZ-38-t0r" eventType="touchUpInside" id="Dd3-WF-5oV"/>
+                                    <action selector="seePlantDetail:" destination="BYZ-38-t0r" eventType="touchUpInside" id="gXb-20-Je4"/>
                                 </connections>
                             </button>
-                            <textView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" fixedFrame="YES" textAlignment="natural" translatesAutoresizingMaskIntoConstraints="NO" id="Xmm-P5-WfP">
+                            <textView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" fixedFrame="YES" text=" " textAlignment="natural" translatesAutoresizingMaskIntoConstraints="NO" id="Xmm-P5-WfP">
                                 <rect key="frame" x="29" y="557" width="334" height="85"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <color key="backgroundColor" systemColor="systemBackgroundColor"/>
-                                <string key="text">Lorem ipsum dolor sit er elit lamet, consectetaur cillium adipisicing pecu, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum. Nam liber te conscient to factor tum poen legum odioque civiuda.</string>
                                 <color key="textColor" systemColor="labelColor"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="14"/>
                                 <textInputTraits key="textInputTraits" autocapitalizationType="sentences"/>
@@ -166,6 +176,16 @@
                                 <fontDescription key="fontDescription" name="Farah" family="Farah" pointSize="25"/>
                                 <textInputTraits key="textInputTraits" autocapitalizationType="words"/>
                             </textField>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="XdH-v4-o10">
+                                <rect key="frame" x="85" y="286" width="223" height="35"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <color key="tintColor" systemColor="systemMintColor"/>
+                                <state key="normal" title="Button"/>
+                                <buttonConfiguration key="configuration" style="plain" title="Add a plant to get started!"/>
+                                <connections>
+                                    <action selector="addPlantScreen:" destination="BYZ-38-t0r" eventType="touchUpInside" id="lP7-Ep-NPH"/>
+                                </connections>
+                            </button>
                         </subviews>
                         <viewLayoutGuide key="safeArea" id="6Tk-OE-BBY"/>
                         <color key="backgroundColor" systemColor="systemBackgroundColor"/>
@@ -173,16 +193,18 @@
                     <tabBarItem key="tabBarItem" title="My Plants" image="leaf.fill" catalog="system" id="CcQ-Xp-WVB"/>
                     <navigationItem key="navigationItem" id="kuQ-Aa-6VN"/>
                     <connections>
+                        <outlet property="addPlantBtn" destination="XdH-v4-o10" id="nTe-tI-a2R"/>
                         <outlet property="imageViewPageControl" destination="Hv5-vA-gd7" id="RYk-mY-5bj"/>
                         <outlet property="plantImageView" destination="0db-CN-Guy" id="UgV-Xr-6fH"/>
                         <outlet property="plantNameTextLabel" destination="gmC-zY-Atr" id="q8c-hF-yFg"/>
                         <outlet property="recommendationTextField" destination="Xmm-P5-WfP" id="deW-GP-Nlx"/>
-                        <segue destination="ACS-vy-T9N" kind="presentation" id="kEz-Tk-8fe"/>
+                        <outlet property="viewStatsBtn" destination="Hmi-qe-9NV" id="ZoW-5H-P8b"/>
+                        <segue destination="ACS-vy-T9N" kind="presentation" identifier="seePlantDetail" id="kEz-Tk-8fe"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="598" y="-963"/>
+            <point key="canvasLocation" x="597.70992366412213" y="-963.38028169014092"/>
         </scene>
         <!--Plant Gallery View Controller-->
         <scene sceneID="KLp-lT-JIp">
@@ -203,7 +225,7 @@
                                     <inset key="sectionInset" minX="0.0" minY="0.0" maxX="0.0" maxY="0.0"/>
                                 </collectionViewFlowLayout>
                                 <cells>
-                                    <collectionViewCell opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" id="tJt-DM-YsQ">
+                                    <collectionViewCell opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" reuseIdentifier="plantGalleryCell" id="tJt-DM-YsQ" customClass="GalleryPhotoCell" customModule="Project_Plant" customModuleProvider="target">
                                         <rect key="frame" x="0.0" y="0.0" width="155" height="146"/>
                                         <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                         <collectionViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" insetsLayoutMarginsFromSafeArea="NO" id="OlH-bT-JDN">
@@ -217,25 +239,47 @@
                                             </subviews>
                                         </collectionViewCellContentView>
                                         <size key="customSize" width="155" height="146"/>
+                                        <connections>
+                                            <outlet property="imageView" destination="cET-gV-okH" id="3Zk-lu-YXf"/>
+                                        </connections>
                                     </collectionViewCell>
                                 </cells>
                             </collectionView>
-                            <textField opaque="NO" contentMode="scaleToFill" horizontalHuggingPriority="248" fixedFrame="YES" contentHorizontalAlignment="left" contentVerticalAlignment="center" text="Name" borderStyle="roundedRect" textAlignment="center" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="lUq-TT-l0l">
+                            <textField opaque="NO" contentMode="scaleToFill" horizontalHuggingPriority="248" fixedFrame="YES" contentHorizontalAlignment="left" contentVerticalAlignment="center" text="Name" textAlignment="center" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="lUq-TT-l0l">
                                 <rect key="frame" x="108" y="113" width="209" height="43"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <color key="textColor" red="0.21965619810000001" green="0.58039218189999997" blue="0.55419293380000001" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
                                 <fontDescription key="fontDescription" name="HelveticaNeue-Bold" family="Helvetica Neue" pointSize="29"/>
                                 <textInputTraits key="textInputTraits"/>
                             </textField>
-                            <textField opaque="NO" contentMode="scaleToFill" horizontalHuggingPriority="248" fixedFrame="YES" contentHorizontalAlignment="left" contentVerticalAlignment="center" text="Type" borderStyle="roundedRect" textAlignment="center" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="QeR-eH-AcD">
+                            <textField opaque="NO" contentMode="scaleToFill" horizontalHuggingPriority="248" fixedFrame="YES" contentHorizontalAlignment="left" contentVerticalAlignment="center" text="Type" textAlignment="center" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="QeR-eH-AcD">
                                 <rect key="frame" x="164" y="71" width="97" height="34"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                <color key="textColor" white="0.66666666666666663" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
-                                <fontDescription key="fontDescription" name="Farah" family="Farah" pointSize="20"/>
+                                <color key="tintColor" systemColor="linkColor"/>
+                                <color key="textColor" white="0.33333333333333331" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                <fontDescription key="fontDescription" type="system" weight="medium" pointSize="20"/>
                                 <textInputTraits key="textInputTraits"/>
                             </textField>
-                            <textField opaque="NO" contentMode="scaleToFill" horizontalHuggingPriority="248" fixedFrame="YES" contentHorizontalAlignment="left" contentVerticalAlignment="center" text="Health" borderStyle="roundedRect" textAlignment="center" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="kPb-5Y-PNI">
-                                <rect key="frame" x="164" y="164" width="97" height="34"/>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="AnM-He-YaG">
+                                <rect key="frame" x="16" y="100" width="56" height="35"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <state key="normal" title="Button"/>
+                                <buttonConfiguration key="configuration" style="plain" image="camera.fill" catalog="system"/>
+                                <connections>
+                                    <action selector="takePhoto:" destination="ACS-vy-T9N" eventType="touchUpInside" id="2cT-cq-Xmh"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="bBH-sc-NXL">
+                                <rect key="frame" x="17" y="143" width="55" height="35"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <state key="normal" title="Button"/>
+                                <buttonConfiguration key="configuration" style="plain" image="photo" catalog="system"/>
+                                <connections>
+                                    <action selector="uploadPhoto:" destination="ACS-vy-T9N" eventType="touchUpInside" id="GTq-qH-x7l"/>
+                                </connections>
+                            </button>
+                            <textField opaque="NO" contentMode="scaleToFill" horizontalHuggingPriority="248" fixedFrame="YES" contentHorizontalAlignment="left" contentVerticalAlignment="center" text="Health" textAlignment="center" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="kPb-5Y-PNI">
+                                <rect key="frame" x="116" y="164" width="193" height="34"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <color key="textColor" white="0.66666666666666663" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                 <fontDescription key="fontDescription" name="Farah" family="Farah" pointSize="20"/>
@@ -249,17 +293,18 @@
                         <outlet property="PlantHealth" destination="kPb-5Y-PNI" id="7M6-xa-FdI"/>
                         <outlet property="PlantName" destination="lUq-TT-l0l" id="eWs-cx-Igt"/>
                         <outlet property="PlantType" destination="QeR-eH-AcD" id="Jow-C4-xef"/>
+                        <outlet property="plantGalleryCollection" destination="je7-tU-AwD" id="qN5-xz-PIC"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="RUy-TP-bxW" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
             <point key="canvasLocation" x="1448.0916030534352" y="-963.38028169014092"/>
         </scene>
-        <!--Item-->
+        <!--Home-->
         <scene sceneID="NaN-sz-XzH">
             <objects>
                 <navigationController id="Pfj-Lt-tLB" sceneMemberID="viewController">
-                    <tabBarItem key="tabBarItem" title="Item" image="homekit" catalog="system" selectedImage="homekit" id="65z-gc-hoA"/>
+                    <tabBarItem key="tabBarItem" title="Home" image="homekit" catalog="system" selectedImage="homekit" id="65z-gc-hoA"/>
                     <navigationBar key="navigationBar" contentMode="scaleToFill" id="L5q-ml-VGH">
                         <rect key="frame" x="0.0" y="59" width="393" height="44"/>
                         <autoresizingMask key="autoresizingMask"/>
@@ -272,11 +317,11 @@
             </objects>
             <point key="canvasLocation" x="-419" y="-273"/>
         </scene>
-        <!--Item-->
+        <!--Add Plant-->
         <scene sceneID="xxy-sP-7lc">
             <objects>
                 <navigationController id="wBz-6e-wlE" sceneMemberID="viewController">
-                    <tabBarItem key="tabBarItem" title="Item" image="plus" catalog="system" id="mK6-Zf-vGb"/>
+                    <tabBarItem key="tabBarItem" title="Add Plant" image="plus" catalog="system" id="mK6-Zf-vGb"/>
                     <navigationBar key="navigationBar" contentMode="scaleToFill" id="luE-dd-xly">
                         <rect key="frame" x="0.0" y="59" width="393" height="44"/>
                         <autoresizingMask key="autoresizingMask"/>
@@ -297,6 +342,13 @@
                         <rect key="frame" x="0.0" y="0.0" width="393" height="852"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Type in the search bar to find your plant!" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" id="vcp-VG-jkf">
+                                <rect key="frame" x="28" y="404" width="340" height="44"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
                             <textField opaque="NO" contentMode="scaleToFill" horizontalHuggingPriority="248" fixedFrame="YES" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="Search for a plant..." textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="Iho-m1-gKf">
                                 <rect key="frame" x="0.0" y="103" width="393" height="34"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
@@ -307,7 +359,7 @@
                                 </connections>
                             </textField>
                             <tableView clipsSubviews="YES" contentMode="scaleToFill" fixedFrame="YES" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="default" rowHeight="-1" estimatedRowHeight="-1" sectionHeaderHeight="-1" estimatedSectionHeaderHeight="-1" sectionFooterHeight="-1" estimatedSectionFooterHeight="-1" translatesAutoresizingMaskIntoConstraints="NO" id="Y5J-UA-eow">
-                                <rect key="frame" x="0.0" y="145" width="393" height="624"/>
+                                <rect key="frame" x="0.0" y="138" width="393" height="631"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <color key="backgroundColor" systemColor="systemBackgroundColor"/>
                                 <prototypes>
@@ -376,36 +428,85 @@
                     <tabBarItem key="tabBarItem" title="Recommendations" image="plus" catalog="system" id="278-An-HMY"/>
                     <navigationItem key="navigationItem" id="kas-lJ-ZM6"/>
                     <connections>
+                        <outlet property="introMsg" destination="vcp-VG-jkf" id="zV2-bZ-k45"/>
                         <outlet property="recommendationTableView" destination="Y5J-UA-eow" id="8TR-44-qz9"/>
                         <outlet property="searchBar" destination="Iho-m1-gKf" id="yIO-Ol-RaU"/>
-                        <segue destination="3OC-82-nQL" kind="show" id="hOc-bF-YSK"/>
+                        <segue destination="3OC-82-nQL" kind="show" identifier="addPlant" id="hOc-bF-YSK"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="kg5-r5-ri9" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
             <point key="canvasLocation" x="597.70992366412213" y="444.36619718309862"/>
         </scene>
-        <!--View Controller-->
+        <!--Plant Creator View Controller-->
         <scene sceneID="kIi-vt-nyd">
             <objects>
-                <viewController id="3OC-82-nQL" sceneMemberID="viewController">
+                <viewController id="3OC-82-nQL" customClass="PlantCreatorViewController" customModule="Project_Plant" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="3Mc-xq-J4f">
                         <rect key="frame" x="0.0" y="0.0" width="393" height="852"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
-                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Plant type" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="QEl-cM-2R0">
-                                <rect key="frame" x="136" y="176" width="108" height="30"/>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Plant type" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="QEl-cM-2R0">
+                                <rect key="frame" x="66" y="176" width="257" height="30"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="25"/>
                                 <nil key="textColor"/>
                                 <nil key="highlightedColor"/>
                             </label>
-                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="hD9-ag-JlA">
-                                <rect key="frame" x="76" y="214" width="240" height="238"/>
+                            <textField opaque="NO" contentMode="scaleToFill" horizontalHuggingPriority="248" fixedFrame="YES" contentHorizontalAlignment="left" contentVerticalAlignment="center" placeholder="Enter name for plant here..." textAlignment="center" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="wn0-ar-WPD">
+                                <rect key="frame" x="10" y="134" width="373" height="34"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                            </imageView>
+                                <fontDescription key="fontDescription" type="system" weight="light" pointSize="40"/>
+                                <textInputTraits key="textInputTraits"/>
+                            </textField>
+                            <view contentMode="scaleToFill" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="2D4-CG-Lqm" customClass="PhotographyView" customModule="Project_Plant" customModuleProvider="target">
+                                <rect key="frame" x="62" y="236" width="265" height="226"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <subviews>
+                                    <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="piq-b3-Av8">
+                                        <rect key="frame" x="0.0" y="0.0" width="265" height="226"/>
+                                        <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                    </imageView>
+                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Take a photo of your plant!" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="K4Z-yb-bI8">
+                                        <rect key="frame" x="17" y="100" width="230" height="27"/>
+                                        <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                        <fontDescription key="fontDescription" type="system" weight="semibold" pointSize="17"/>
+                                        <nil key="textColor"/>
+                                        <nil key="highlightedColor"/>
+                                    </label>
+                                </subviews>
+                                <color key="backgroundColor" systemColor="systemGray5Color"/>
+                                <connections>
+                                    <outlet property="imageView" destination="piq-b3-Av8" id="nPb-7N-OAv"/>
+                                    <outlet property="photoLbl" destination="K4Z-yb-bI8" id="6iB-CH-Xj8"/>
+                                </connections>
+                            </view>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Gdi-Q3-lDY">
+                                <rect key="frame" x="98" y="520" width="196" height="38"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <color key="tintColor" systemColor="systemMintColor"/>
+                                <state key="normal" title="Button"/>
+                                <buttonConfiguration key="configuration" style="plain" title="Upload camera roll">
+                                    <fontDescription key="titleFontDescription" type="system" weight="semibold" pointSize="20"/>
+                                </buttonConfiguration>
+                                <connections>
+                                    <action selector="uploadRoll:" destination="3OC-82-nQL" eventType="touchUpInside" id="JmG-6T-pjK"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="ESt-Uc-m7d">
+                                <rect key="frame" x="126" y="483" width="141" height="38"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <color key="tintColor" systemColor="systemMintColor"/>
+                                <state key="normal" title="Button"/>
+                                <buttonConfiguration key="configuration" style="plain" title="Take a photo">
+                                    <fontDescription key="titleFontDescription" type="system" weight="semibold" pointSize="20"/>
+                                </buttonConfiguration>
+                                <connections>
+                                    <action selector="takePhoto:" destination="3OC-82-nQL" eventType="touchUpInside" id="E8k-Pc-gHs"/>
+                                </connections>
+                            </button>
                             <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="9y0-V8-MyW">
-                                <rect key="frame" x="66" y="499" width="261" height="59"/>
+                                <rect key="frame" x="66" y="584" width="261" height="59"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <color key="backgroundColor" systemColor="systemMintColor"/>
                                 <color key="tintColor" systemColor="systemGray6Color"/>
@@ -413,18 +514,22 @@
                                 <buttonConfiguration key="configuration" style="plain" title="Save new plant &gt;">
                                     <fontDescription key="titleFontDescription" type="system" weight="medium" pointSize="25"/>
                                 </buttonConfiguration>
+                                <connections>
+                                    <action selector="saveNewPlant:" destination="3OC-82-nQL" eventType="touchUpInside" id="yj3-hA-Lrf"/>
+                                </connections>
                             </button>
-                            <textField opaque="NO" contentMode="scaleToFill" horizontalHuggingPriority="248" fixedFrame="YES" contentHorizontalAlignment="left" contentVerticalAlignment="center" placeholder="Enter name for plant here..." textAlignment="center" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="wn0-ar-WPD">
-                                <rect key="frame" x="10" y="134" width="373" height="34"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                <fontDescription key="fontDescription" type="system" weight="light" pointSize="40"/>
-                                <textInputTraits key="textInputTraits"/>
-                            </textField>
                         </subviews>
                         <viewLayoutGuide key="safeArea" id="YeL-ed-zbf"/>
                         <color key="backgroundColor" systemColor="systemBackgroundColor"/>
                     </view>
                     <navigationItem key="navigationItem" id="bdm-sR-Njh"/>
+                    <connections>
+                        <outlet property="imageViewerPicker" destination="2D4-CG-Lqm" id="fS4-Ws-q5K"/>
+                        <outlet property="plantCapturedImage" destination="piq-b3-Av8" id="rHc-tx-NZa"/>
+                        <outlet property="plantNameField" destination="wn0-ar-WPD" id="7Sd-0z-AM4"/>
+                        <outlet property="plantType" destination="QEl-cM-2R0" id="IaR-bd-pBk"/>
+                        <outlet property="savePlantBtn" destination="9y0-V8-MyW" id="Kcy-4o-1dc"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="2vA-Tr-mjO" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
@@ -432,10 +537,12 @@
         </scene>
     </scenes>
     <resources>
+        <image name="camera.fill" catalog="system" width="128" height="93"/>
         <image name="chevron.right" catalog="system" width="97" height="128"/>
         <image name="drop.fill" catalog="system" width="96" height="128"/>
         <image name="homekit" catalog="system" width="128" height="104"/>
         <image name="leaf.fill" catalog="system" width="128" height="109"/>
+        <image name="photo" catalog="system" width="128" height="93"/>
         <image name="plus" catalog="system" width="128" height="113"/>
         <namedColor name="AccentColor">
             <color red="0.0" green="0.46000000000000002" blue="0.89000000000000001" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
@@ -443,8 +550,14 @@
         <systemColor name="labelColor">
             <color red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
         </systemColor>
+        <systemColor name="linkColor">
+            <color red="0.0" green="0.47843137254901963" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+        </systemColor>
         <systemColor name="systemBackgroundColor">
             <color white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+        </systemColor>
+        <systemColor name="systemGray5Color">
+            <color red="0.89803921568627454" green="0.89803921568627454" blue="0.91764705882352937" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
         </systemColor>
         <systemColor name="systemGray6Color">
             <color red="0.94901960784313721" green="0.94901960784313721" blue="0.96862745098039216" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>

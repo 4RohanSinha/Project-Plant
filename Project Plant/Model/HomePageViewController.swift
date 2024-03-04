@@ -12,7 +12,7 @@ class HomePageViewController: UIViewController {
     @IBOutlet weak var FactLabel: UILabel!
 
     @IBAction func MyPlantsOnButtonClick(_ sender: Any) {
-        tabBarController?.selectedIndex = 1
+        tabBarController?.selectedIndex = 0
     }
     @IBAction func RecommendationsOnButtonClick(_ sender: Any) {
         tabBarController?.selectedIndex = 2

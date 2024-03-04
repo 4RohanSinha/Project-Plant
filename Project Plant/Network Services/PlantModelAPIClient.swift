@@ -9,21 +9,17 @@ import Foundation
 
 class PlantModelAPIClient {
     enum Endpoints {
-        static let plantModelBase = ""
-        static let diagnosisEnd = ""
-        static let recommenderEnd = ""
-        static let searchEnd = ""
+        static let plantModelBase = "http://127.0.0.1:5000/"
+        static let diagnosisEnd = "treatment"
+        static let searchEnd = "search"
         
         case diagnosis
-        case recommender
         case search
         
         private var urlStringVal: String {
             switch self {
             case let .diagnosis:
                 return Endpoints.plantModelBase + Endpoints.diagnosisEnd
-            case let .recommender:
-                return Endpoints.plantModelBase + Endpoints.recommenderEnd
             case let .search:
                 return Endpoints.plantModelBase + Endpoints.searchEnd
             }
@@ -38,17 +34,15 @@ class PlantModelAPIClient {
         return DiagnosisRequest(plant_photo: plant_photo)
     }
     
-    class func createRecommenderRequest() -> RecommenderRequest {
-        return RecommenderRequest(plants: [])
-    }
-    
-    class func getSearchResults(query: String, completion: @escaping (SearchResultResponse?, Error?) -> Void) {
+    class func getSearchResults(query: String, completion: @escaping (SearchResultResponse?, Error?) -> Void) -> URLSessionTask? {
         let req = SearchRequest(query: query)
         
-        postRequest(url: Endpoints.search.url, requestData: req, completion: completion)
+        let task = postRequest(url: Endpoints.search.url, requestData: req, completion: completion)
+        
+        return task
     }
     
-    class func postRequest<RequestType: Encodable, ResponseType: Decodable>(url: URL, requestData: RequestType, completion: @escaping (ResponseType?, Error?) -> Void) {
+    class func postRequest<RequestType: Encodable, ResponseType: Decodable>(url: URL, requestData: RequestType, completion: @escaping (ResponseType?, Error?) -> Void) -> URLSessionTask? {
         var request = URLRequest(url: url)
         request.setValue("application/json", forHTTPHeaderField: "Accept")
         request.httpMethod = "POST"
@@ -56,7 +50,7 @@ class PlantModelAPIClient {
         do {
             request.httpBody = try JSONEncoder().encode(requestData)
         } catch {
-            return
+            return nil
         }
         
         let task = URLSession.shared.dataTask(with: request) { data, res, err in
@@ -77,13 +71,13 @@ class PlantModelAPIClient {
                 completion(nil, error)
             }
         }
+        
+        task.resume()
+        
+        return task
     }
     
     class func getDiagnosis(requestData: DiagnosisRequest, completion: @escaping (DiagnosisResponse?, Error?) -> Void) {
         postRequest(url: Endpoints.diagnosis.url, requestData: requestData, completion: completion)
-    }
-    
-    class func getRecommendation(requestData: RecommenderRequest, completion: @escaping (RecommenderResponse?, Error?) -> Void) {
-        postRequest(url: Endpoints.recommender.url, requestData: requestData, completion: completion)
     }
 }

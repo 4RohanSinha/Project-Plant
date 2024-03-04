@@ -22,6 +22,9 @@
 		1C1232E02B954D520010518C /* SearchRequest.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1C1232DF2B954D520010518C /* SearchRequest.swift */; };
 		1C1232E22B954E150010518C /* SearchResultResponse.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1C1232E12B954E150010518C /* SearchResultResponse.swift */; };
 		1C1232E72B9550F50010518C /* SearchResultTableCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1C1232E62B9550F50010518C /* SearchResultTableCell.swift */; };
+		1C1232E92B9558C60010518C /* PlantCreatorViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1C1232E82B9558C60010518C /* PlantCreatorViewController.swift */; };
+		1C1232EB2B955C7C0010518C /* PhotographyView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1C1232EA2B955C7C0010518C /* PhotographyView.swift */; };
+		1C1232ED2B956CB70010518C /* GalleryPhotoCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1C1232EC2B956CB70010518C /* GalleryPhotoCell.swift */; };
 		1CDA96542B95015D003E399F /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1CDA96532B95015D003E399F /* AppDelegate.swift */; };
 		1CDA96562B95015D003E399F /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1CDA96552B95015D003E399F /* SceneDelegate.swift */; };
 		1CDA965B2B95015D003E399F /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 1CDA96592B95015D003E399F /* Main.storyboard */; };
@@ -66,6 +69,9 @@
 		1C1232DF2B954D520010518C /* SearchRequest.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SearchRequest.swift; sourceTree = "<group>"; };
 		1C1232E12B954E150010518C /* SearchResultResponse.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SearchResultResponse.swift; sourceTree = "<group>"; };
 		1C1232E62B9550F50010518C /* SearchResultTableCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SearchResultTableCell.swift; sourceTree = "<group>"; };
+		1C1232E82B9558C60010518C /* PlantCreatorViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PlantCreatorViewController.swift; sourceTree = "<group>"; };
+		1C1232EA2B955C7C0010518C /* PhotographyView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PhotographyView.swift; sourceTree = "<group>"; };
+		1C1232EC2B956CB70010518C /* GalleryPhotoCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GalleryPhotoCell.swift; sourceTree = "<group>"; };
 		1CDA96502B95015D003E399F /* Project Plant.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "Project Plant.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		1CDA96532B95015D003E399F /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		1CDA96552B95015D003E399F /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
@@ -126,9 +132,6 @@
 				1C1232CB2B9522750010518C /* MyPlantsViewController.swift */,
 				1C1232D22B952A620010518C /* TabBarRootViewController.swift */,
 				1C1232D42B9538750010518C /* CoreDataStackViewController.swift */,
-				B1CA71C82B95100900A54CC3 /* HomePageViewController.swift */,
-				1C1232D92B9541510010518C /* PlantGalleryViewController.swift */,
-				1C1232DD2B9546670010518C /* SearchPlantViewController.swift */,
 			);
 			path = Controllers;
 			sourceTree = "<group>";
@@ -138,6 +141,10 @@
 			children = (
 				1C1232CE2B9528E10010518C /* DataController.swift */,
 				1C1232D62B953D800010518C /* Project_Plant.xcdatamodeld */,
+				B1CA71C82B95100900A54CC3 /* HomePageViewController.swift */,
+				1C1232D92B9541510010518C /* PlantGalleryViewController.swift */,
+				1C1232DD2B9546670010518C /* SearchPlantViewController.swift */,
+				1C1232E82B9558C60010518C /* PlantCreatorViewController.swift */,
 			);
 			path = Model;
 			sourceTree = "<group>";
@@ -146,6 +153,8 @@
 			isa = PBXGroup;
 			children = (
 				1C1232E62B9550F50010518C /* SearchResultTableCell.swift */,
+				1C1232EA2B955C7C0010518C /* PhotographyView.swift */,
+				1C1232EC2B956CB70010518C /* GalleryPhotoCell.swift */,
 			);
 			path = View;
 			sourceTree = "<group>";
@@ -153,9 +162,9 @@
 		1CDA96472B95015D003E399F = {
 			isa = PBXGroup;
 			children = (
-				1CDA96522B95015D003E399F /* Project Plant */,
 				1CDA966C2B95015E003E399F /* Project PlantTests */,
 				1CDA96762B95015E003E399F /* Project PlantUITests */,
+				1CDA96522B95015D003E399F /* Project Plant */,
 				1CDA96512B95015D003E399F /* Products */,
 			);
 			sourceTree = "<group>";
@@ -173,16 +182,16 @@
 		1CDA96522B95015D003E399F /* Project Plant */ = {
 			isa = PBXGroup;
 			children = (
-				1C1232E32B9550180010518C /* View */,
-				1C1232CD2B9528D30010518C /* Model */,
-				1C1232C82B95223B0010518C /* Controllers */,
 				1C1232BF2B9509F20010518C /* Network Services */,
 				1CDA96532B95015D003E399F /* AppDelegate.swift */,
 				1CDA96552B95015D003E399F /* SceneDelegate.swift */,
 				1CDA96592B95015D003E399F /* Main.storyboard */,
-				1CDA965F2B95015E003E399F /* Assets.xcassets */,
 				1CDA96612B95015E003E399F /* LaunchScreen.storyboard */,
 				1CDA96642B95015E003E399F /* Info.plist */,
+				1C1232E32B9550180010518C /* View */,
+				1C1232CD2B9528D30010518C /* Model */,
+				1C1232C82B95223B0010518C /* Controllers */,
+				1CDA965F2B95015E003E399F /* Assets.xcassets */,
 			);
 			path = "Project Plant";
 			sourceTree = "<group>";
@@ -339,6 +348,9 @@
 				1C1232D82B953D800010518C /* Project_Plant.xcdatamodeld in Sources */,
 				1C1232C72B9521D50010518C /* RecommenderResponse.swift in Sources */,
 				1CDA96542B95015D003E399F /* AppDelegate.swift in Sources */,
+				1C1232ED2B956CB70010518C /* GalleryPhotoCell.swift in Sources */,
+				1C1232EB2B955C7C0010518C /* PhotographyView.swift in Sources */,
+				1C1232E92B9558C60010518C /* PlantCreatorViewController.swift in Sources */,
 				1C1232C32B950A3D0010518C /* DiagnosisResponse.swift in Sources */,
 				1CDA96562B95015D003E399F /* SceneDelegate.swift in Sources */,
 				B1CA71C92B95100900A54CC3 /* HomePageViewController.swift in Sources */,
