@@ -18,8 +18,14 @@ class PlantGalleryViewController: UIViewController {
         plant = plant_
     }
     
+    @IBOutlet weak var PlantType: UITextField!
+    @IBOutlet weak var PlantName: UITextField!
+    @IBOutlet weak var PlantHealth: UITextField!
+    
     func setTextToPlantData() {
-        
+        PlantType.text = plant.type
+        PlantName.text = plant.name
+        PlantHealth.text = plant.currentHealth
     }
     
     override func viewDidLoad() {
