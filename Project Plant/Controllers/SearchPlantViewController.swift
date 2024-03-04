@@ -7,15 +7,15 @@
 
 import UIKit
 
-class RecommendationViewController: UIViewController {
+class SearchPlantViewController: UIViewController {
 
     @IBOutlet weak var recommendationTableView: UITableView!
-    @IBOutlet weak var customSpeciesName: UITextField!
+    @IBOutlet weak var searchBar: UITextField!
+    
+    var results: [SearchResult] = []
     
     override func viewDidLoad() {
         super.viewDidLoad()
-
-        // Do any additional setup after loading the view.
     }
     
 
@@ -29,4 +29,18 @@ class RecommendationViewController: UIViewController {
     }
     */
 
+}
+
+extension SearchPlantViewController: UITableViewDataSource, UITableViewDelegate {
+    func numberOfSections(in tableView: UITableView) -> Int {
+        return 1
+    }
+    
+    func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
+        return results.count
+    }
+    
+    func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
+        return UITableViewCell()
+    }
 }

@@ -12,6 +12,7 @@ class PlantModelAPIClient {
         static let plantModelBase = ""
         static let diagnosisEnd = ""
         static let recommenderEnd = ""
+        static let searchEnd = ""
         
         case diagnosis
         case recommender
